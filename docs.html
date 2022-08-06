@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation</title>
+    <link rel="icon" href="./favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+
+        .container{
+            position: absolute;
+            top: 60px;
+            height: calc(100% - 60px);
+            width: 100%;
+            left: 0%;
+        }
+        .sideMenu{
+            position: absolute;
+            height: 100%;
+            width: 210px;
+            text-align: center;
+            font-family: Arial;
+            font-size: 18px;
+            max-width: 100%;
+            border-right: solid 1px #ccc;
+        }
+        .sideMenu .regular{
+            text-align: left;
+            padding-left: 25px;
+            cursor: pointer;
+            margin: 0;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-bottom: 5px;
+        }
+        .sideMenu .choosen{
+            text-align: left;
+            border-left: solid 10px #06d;
+            padding-left: 15px;
+            cursor: pointer;
+            margin: 0;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-bottom: 5px;
+        }
+
+        .data{
+            position: absolute;
+            height: 100%;
+            left: 211px;
+            width: calc(100% - 255px);
+            color: White;
+            padding-left: 50px;
+            color: #111;
+            text-align: left;
+            font-family: Arial;
+            font-size: 18px;
+            font-family: Franklin Gothic;
+            overflow: scroll;
+            font-weight: 300;
+        }
+        .data::-webkit-scrollbar{-webkit-appearance: none;width: 15px;}
+        .data::-webkit-scrollbar-corner{-webkit-appearance: none;}
+        .data::-webkit-scrollbar-thumb{
+            -webkit-appearance: none;
+            border-radius: 25px;
+            background: #ccc;
+        }
+        .data::-webkit-scrollbar-thumb:hover{background: #bbb;}
+        .data::-webkit-scrollbar-thumb:active{background: #aaa;}
+        .data hr{
+            width: calc(100% - 230px);
+            position: absolute;
+            left: 30px;
+        }
+        .data *{margin: 0;opacity: 1;}
+        .data h1{margin-top: 30px;margin-bottom: 30px;text-decoration: underline #80f;}
+        .data h2{margin-left: 30px}
+        .data span{margin-left: 60px;margin-bottom: 10px;}
+        .data span scr{
+            background: #111;
+            color: #eee;
+            padding: 2px;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 14px;
+            font-family: Consolas;
+            margin-top: -2px;
+            display: inline-block;
+            user-select: text;
+        }
+        .link{color: #00f;cursor: pointer;text-decoration: underline;}
+        .link:active{color: #f00;}
+        .link::selection{cursor: not-allowed;}
+        br::selection{color: transparent;}
+        .searchy{font-size: 16px;cursor: pointer;}
+        .licensey{
+            margin-left: 30px;
+            max-width: 800px;
+        }
+        .thr-licensey{
+            margin-left: 50px;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">Cybex-Web2exe</div>
+        <div class="top-bar">
+            <a class="item">Quick Start</a>
+            <a class="item">Docs</a>
+            <a class="item">Releases</a>
+            <a class="item">About Us</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sideMenu" id="sideMenu">
+            <br>
+            <p onclick="Display('installation')" id='installation-button'>Installation</p>
+            <p onclick="Display('running')" id='running-button'>Running</p>
+            <p onclick="Display('building')" id='building-button'>Building</p>
+            <p onclick="Display('customization')" id='customization-button'>Customization</p>
+            <p onclick="Display('upcoming-features')" id='upcoming-features-button'>Upcoming Features</p>
+            <p onclick="Display('license')" id='license-button'>License</p>
+        </div>
+        <div class="data" id="data">
+            <div id="installation">
+                <h1>Installation</h1>
+                <div>
+                    <h2>System Requirements</h2><br>
+                    <span>Windows XP, Vista, 7, 8, 8.1, 10, 11</span><br>
+                    <span>Node >= 10 and npm >= 6</span><br>
+                    <span>Google Chrome 59 or later</span>
+                </div><br>
+                <div>
+                    <h2>Instructions</h2><br>
+                    <span>Install node and npm ,if not</span><br>
+                    <span>Run <scr class="command">npm i cybex-web2exe -g</scr> in terminal.</span><br>
+                </div>
+            </div>
+
+            <div id="building"></div>
+            <div id="running"></div>
+            <div id="customization"></div>
+            <div id="license">
+                <h1>License</h1>
+                <div class="licensey">
+                    Copyright (c) 2022 Kapoorz Inc. <br><br>
+                    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+                    documentation files (the "Software"), to deal in the Software without restriction, including without
+                    limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+                    Software, and to permit persons to whom the Software is furnished to do so, subject to the following
+                    conditions: <br><br>
+
+                    The above copyright notice and this permission notice shall be included in all copies or substantial portions
+                    of the Software.
+
+                    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+                    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+                    THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+                    CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+                    DEALINGS IN THE SOFTWARE.</div>
+            </div>
+            <div id="upcoming-features">
+                <h1>Upcoming Features in 2022.1</h1><br>
+                <span>1. Design Library</span><br><br>
+                <span>2. Bug Fixes</span><br><br>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    @media screen and (min-width:1920px){
+        *{font-size: 32px;}
+        #Heading{
+            font-size: 32px;
+            margin-left: 20px;
+            font-family: Arial;
+        }
+        #Menu button{
+            padding-right: 40px;
+            padding-left: 40px;
+            font-size: 32px;
+            font-family: Arial;
+        }
+        .sideMenu{
+            width: 360px;
+        }
+        .data{
+            left: 360px;
+            width: calc(100% - 410px);
+        }
+        #search{
+            width: 280px;
+            border-width: 2px;
+            border-radius: 10px;
+            font-size: 24px;
+            padding: 3px;
+            padding-right: 15px;
+            padding-left: 15px;
+            font-family: Arial;
+            margin-top: 20px;
+        }
+        #search:focus{box-shadow: 0 0 8px Cyan;}
+        .searchy{
+            font-size: 30px;
+        }
+        h1{
+            font-size: 58px;
+        }
+        h2{font-size: 48px;}
+        .data div div{margin-left: 50px;}
+        .data div div span{margin-left: 100px;}
+        .data div div p{max-width: 1000px;}
+        .licensey{
+            margin-left: 50px;
+            max-width: 1200px;
+        }
+        .thr-licensey{
+            margin-left: 80px;
+            max-width: 1200px;
+        }
+        .data::-webkit-scrollbar{width: 25px;}
+    }
+</style>
+<script>
+
+    function Display(elem) {
+        let li = ['installation','license','upcoming-features','running','building','customization']
+        for (let i = 0; i < 6; i++) {
+            document.getElementById(li[i]).style.display = "none"
+            document.getElementById(li[i]+"-button").className = "regular"
+        }
+        document.getElementById(elem).style.display = "block"
+        document.getElementById(elem + "-button").className = "choosen"
+
+    }
+    window.onload = Display('installation');
+</script>
+</html>
