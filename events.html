@@ -23,6 +23,10 @@
             font-family: Arial;
             color: #111;
         }
+        .card *{user-select: none;}
+        .card img{
+            width: 350px
+        }
         .card hr{
             position: relative;
             width: 340px;
@@ -30,13 +34,7 @@
             border: none;
             height: 2px;
         }
-        .card img{
-            margin-top: -10px;
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-        }
-        .card a{color: blue}
+        img.soon{margin-top: 80px}
     </style>
 </head>
 <body>
@@ -49,18 +47,13 @@
             <a class="item" href="./aboutUs">About Us</a>
         </div>
     </div>
-    <div class="content">
-        <div class="card">
-            <h1 style="margin-top: 5px;">Dev Kapoor</h1>
-            <img src="user.png">
-            <hr>
-            I'm just 14 and trying my best to maintain this great module. <br><br>
-            I'm trying my best to provide you latest updates and as much features as I can. <br><br>
-            I'm able to do this only of the efforts of me and my parents and your kind support. <br><br>
-            Please <a href="https://www.npmjs.com/package/cybex-web2exe">Install</a> it and Star it on <a href="https://github.com/Cybex-developers/Cybex-Web2exe">Github</a> <br>
-            Your support is appreciated.
-            <hr>
-            <h2 style="margin-top: 13px;">Founder and CEO</h2>
+    <div class="container">
+        <div class="content">
+            <div class="card">
+                <img src="events/event1.png" class="soon">
+                <hr></hr>
+                <h1>Coming Soon !</h1>
+            </div>
         </div>
     </div>
 </body>

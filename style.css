@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{user-select: none}
-body{font-family: Roboto;overflow: hidden;}
+body{font-family: Roboto;overflow: hidden;background: #f8f8f8}
 .header{
     height: 50px;
     width: 100%;
@@ -27,11 +27,14 @@ body{font-family: Roboto;overflow: hidden;}
     margin-top: 12px;
     margin-right: 30px;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-family: Roboto;
 }
 .header .top-bar .item::after{
     display:block;
     content: '';
-    border-bottom: solid 3px white;
+    border-bottom: solid 3px #cc1;
     transform: scaleX(0);
     transition: transform 0.4s ease-in-out;
     transform-origin: 0% 50%;
