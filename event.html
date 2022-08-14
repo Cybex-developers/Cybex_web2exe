@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <script src="AllSize.js"></script>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <style media="screen">
+        .content{
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+        }
+        .card{
+            position: relative;
+            top: 25px;
+            display: inline-block;
+            height: 530px;
+            border-radius: 5px;
+            padding: 10px;
+            width: 350px;
+            box-shadow: 0 0 5px #888;
+            text-align: center;
+            font-family: Arial;
+            color: #111;
+        }
+        .card *{user-select: none;}
+        .card img{
+            width: 350px
+        }
+        .card hr{
+            position: relative;
+            width: 340px;
+            background: #06d;
+            border: none;
+            height: 2px;
+        }
+        img.soon{margin-top: 80px}
+        iframe{
+            top: 30px;
+            left: 8%;
+            width: 82%;
+            height: 88%;
+            background: white;
+            position: absolute;
+            box-shadow: 0 0 10px #888;
+            border-radius: 10px;
+            display: none;
+            overflow: hidden;
+        }
+        .card button{
+            font-size: 24px;
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 5px;
+            background: #084;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            transition: 0.3s;
+        }
+        .card button:hover{background: #073;}
+        .card button:active{box-shadow: 0 0 5px #073;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">Cybex-Web2exe</div>
+        <div class="top-bar">
+            <a class="item" href="./">Home</a>
+            <a class="item" href="./docs">Docs</a>
+            <a class="item" href="./event">Events</a>
+            <a class="item" href="./aboutUs">About Us</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="card">
+                <img src="events/event1.png" class="soon">
+                <hr></hr>
+                <button onclick="play()">Play Now</button>
+            </div>
+            <iframe src="events/15aug.html" frameborder="0" id="iframe"></iframe>
+        </div>
+    </div>
+</body>
+<script>
+    function play() {
+        document.getElementById('iframe').style.display = "block";
+    }
+</script>
+</html>
