@@ -5,9 +5,10 @@ window.mobileAndTabletCheck = function() {
 };
 
 const head = document.getElementsByTagName("head")[0];
+const style = document.createElement("link");
+style.rel = "stylesheet";
+
 if (window.mobileAndTabletCheck() == true) {
-
-}
-else {
-
+    style.href = "mobile.css"
+    head.appendChild(style);
 }

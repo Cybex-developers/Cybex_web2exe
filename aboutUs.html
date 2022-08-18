@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>About Us</title>
-    <script src="AllSize.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="favicon.png">
     <style media="screen">
@@ -15,36 +13,41 @@
         }
         .card{
             position: relative;
-            top: 25px;
+            top: 3.8vh;
             display: inline-block;
-            height: 530px;
-            border-radius: 5px;
-            padding: 10px;
-            width: 350px;
-            box-shadow: 0 0 5px #888;
+            height: 80.6vh;
+            border-radius: 0.35vw;
+            padding: 0.8vw;
+            width: 25.6vw;
+            box-shadow: 0 0 0.35vw #888;
             text-align: center;
             font-family: Arial;
             color: #111;
         }
         .card hr{
             position: relative;
-            width: 340px;
+            width: 24.9vw;
             background: #06d;
             border: none;
             height: 2px;
+            margin-bottom: 2vh;
         }
         .card img{
             margin-top: -10px;
             border-radius: 50%;
-            width: 200px;
-            height: 200px;
+            width: 30.4vh;
+            height: 30.4vh;
         }
         .card a{color: blue}
+        .hname{margin-top: 5px;font-size: 2.5vw;}
+        .rank{font-size: 2vw;}
+        .aboutmessage{font-size: 1.1vw;}
     </style>
+    <script src="AllSize.js"></script>
 </head>
 <body>
     <div class="header">
-        <div class="name">Cybex-Web2exe</div>
+        <div class="name-cont"><div class="name">Cybex-Web2exe</div></div>
         <div class="top-bar">
             <a class="item" href="./">Home</a>
             <a class="item" href="./docs">Docs</a>
@@ -54,16 +57,16 @@
     </div>
     <div class="content">
         <div class="card">
-            <h1 style="margin-top: 5px;">Dev Kapoor</h1>
-            <img src="user.png">
+            <h1 class="hname">Dev Kapoor</h1>
+            <img src="user.png" class="user">
             <hr>
-            I'm just 14 and trying my best to maintain this great module. <br><br>
+            <span class="aboutmessage">I'm just 14 and trying my best to maintain this great module. <br><br>
             I'm trying my best to provide you latest updates and as much features as I can. <br><br>
             I'm able to do this only of the efforts of me and my parents and your kind support. <br><br>
             Please <a href="https://www.npmjs.com/package/cybex-web2exe">Install</a> it and Star it on <a href="https://github.com/Cybex-developers/Cybex-Web2exe">Github</a> <br>
-            Your support is appreciated.
+            Your support is appreciated.</span>
             <hr>
-            <h2 style="margin-top: 13px;">Founder and CEO</h2>
+            <h2 style="margin-top: 13px;" class="rank">Founder and CEO</h2>
         </div>
     </div>
 </body>
