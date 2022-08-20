@@ -60,4 +60,22 @@
     .card .aboutmessage{font-size: 2vh;}
     .card .rank{font-size: 2.8vh;}
     .container{top: 13vh;}
+    .sideMenu{width: 8vw;}
+    .sideMenu .desktop{display: none;}
+    .sideMenu .mobile{
+        display: block;
+        font-size: 2vh;
+    }
+    .sideMenu p{
+        width: 6vw;
+    }
+    .data{
+        width: 89vw;
+        left: 9vw;
+        font-size: 1.5vh;
+        height: 87vh;
+    }
+    .data span scr{font-size: 1.5vh;}
+    .data table{width: 80vw;font-size: 1.5vh;}
+    .data th:nth-child(even) {width: 58.5vw}
 }

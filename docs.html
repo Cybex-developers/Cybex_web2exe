@@ -45,7 +45,7 @@
             color: #fff;
             transition: 0.1s;
         }
-
+        .sideMenu .mobile{display: none}
         .data{
             position: absolute;
             height: 100%;
@@ -120,7 +120,6 @@
           background-color: #eee;
         }
     </style>
-    <script src="AllSize.js"></script>
 </head>
 <body>
     <div class="header">
@@ -135,13 +134,36 @@
     <div class="container">
         <div class="sideMenu" id="sideMenu">
             <br>
-            <p onclick="Display('installation')" id='installation-button'>Installation</p>
-            <p onclick="Display('creation')" id='creation-button'>Creating a new project</p>
-            <p onclick="Display('running')" id='running-button'>Running</p>
-            <p onclick="Display('building')" id='building-button'>Building</p>
-            <p onclick="Display('customization')" id='customization-button'>Customization</p>
-            <p onclick="Display('upcoming-features')" id='upcoming-features-button'>Upcoming Features</p>
-            <p onclick="Display('license')" id='license-button'>License</p>
+            <div class="desktop">
+                <p onclick="Display('installation')" id='installation-button'>Installation</p>
+                <p onclick="Display('creation')" id='creation-button'>Creating a new project</p>
+                <p onclick="Display('running')" id='running-button'>Running</p>
+                <p onclick="Display('building')" id='building-button'>Building</p>
+                <p onclick="Display('customization')" id='customization-button'>Customization</p>
+                <p onclick="Display('upcoming-features')" id='upcoming-features-button'>Upcoming Features</p>
+                <p onclick="Display('license')" id='license-button'>License</p>
+            </div>
+            <div class="mobile">
+                <p onclick="Display('installation')" id='installation-button'><i class="fa fa-download"></i></p>
+                <p onclick="Display('creation')" id='creation-button'>
+                    <i class="fa fa-plus"></i>
+                </p>
+                <p onclick="Display('running')" id='running-button'>
+                    <i class="fa fa-person-running"></i>
+                </p>
+                <p onclick="Display('building')" id='building-button'>
+                    <i class="fa fa-hammer"></i>
+                </p>
+                <p onclick="Display('customization')" id='customization-button'>
+                    <i class="fa fa-gears"></i>
+                </p>
+                <p onclick="Display('upcoming-features')" id='upcoming-features-button'>
+                    <i class="fa fa-download"></i>
+                </p>
+                <p onclick="Display('license')" id='license-button'>
+                    <i class="fa fa-file-lines"></i>
+                </p>
+            </div>
         </div>
         <div class="data" id="data">
             <div id="installation">
@@ -321,6 +343,7 @@
         </div>
     </div>
 </body>
+<script src="AllSize.js"></script>
 <script>
 
     function Display(elem) {
