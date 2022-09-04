@@ -1,7 +1,7 @@
 @media (orientation: portrait) {
     body{
         display: flex;
-        height: 100vh;
+        max-height: 100vh;
     }
     .header{height: 13vh;}
     .header .name-cont{
