@@ -16,7 +16,7 @@ body{font-family: Roboto;overflow: hidden;background: #f8f8f8}
 .header * {display: inline-block;}
 .header .name{
     font-size: 1.83vw;
-    margin-top: 1.8vh;
+    margin-top: 1.1vh;
     margin-left: 1.46vw;
 }
 .header .top-bar{
