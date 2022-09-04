@@ -1,4 +1,8 @@
 @media (orientation: portrait) {
+    body{
+        display: flex;
+        height: 100vh;
+    }
     .header{height: 13vh;}
     .header .name-cont{
         position: relative;
@@ -6,7 +10,6 @@
         left: 27vw;
         padding-left: 5vw;
         padding-right: 5vw;
-        background: relative;
         height: 6vh;
         content: " ";
         background: white;
@@ -20,7 +23,6 @@
         color: transparent;
         background: linear-gradient(to right,#00fa,#08fa);
         -webkit-background-clip: text;
-        background-clip: text;
         z-index: 1;
         font-weight: bold;
     }
