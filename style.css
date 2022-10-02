@@ -10,8 +10,9 @@ body{font-family: Roboto;overflow: hidden;background: #f8f8f8}
     left: 0;
     border-bottom: 1px solid #ccc;
     user-select: none;
-    background: linear-gradient(to right,#00fa,#08fa);
+    background: linear-gradient(to right,#f08c,#08fc);
     color: white;
+    animation: anima 10s linear infinite;
 }
 .header * {display: inline-block;}
 .header .name{
@@ -50,4 +51,9 @@ body{font-family: Roboto;overflow: hidden;background: #f8f8f8}
     top: 7.3%;
     left: 0;
     overflow: hidden;
+}
+@keyframes anima {
+    0%{filter: hue-rotate(0);}
+    50%{filter: hue-rotate(360deg);}
+    100%{filter: hue-rotate(0);}
 }
